@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>All About Me!</title>
+	</head>
+
+
+     <body style="background-color: LightBlue;">
+         <h1 style="background-color: #ffcc00;">All About Will</h1>
+
+		    <p style="background-color: rgb(155,155,155);">
+  
+		Inside the body tag is where you put all the cool stuff
+		you want on your page!
+		</p>
+		 <h2 style="background-color:LightYellow;">Will Wang</h2>
+
+	</body>
+</html>
