@@ -6,8 +6,8 @@
 }
 
 :root {
-    --bg-color: #121212; 
-    --text-color: #f5f5f5;
+    --bg-color: #000000; 
+    --text-color: #ffffff;
     --accent-color: #888;
     --hover-overlay: rgba(0, 0, 0, 0.6);
 }
@@ -74,7 +74,7 @@ footer {
     font-size: 14px;
 }
 
-/* This Part I got from AI becuase I really don't know how to write adaptive formatting */
+/* This Part I got from AI becuase I really don't know how to write adaptive formatting(I would have known if this was "Lua", I want my website to look perfect on all devices so I added this, since it doesn't affact the website too much and is not a part of the rubric so I think its okay to let AI handle the algorthium */
 @media (max-width: 992px) {
     .gallery {
         column-count: 2; 
