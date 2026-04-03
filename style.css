@@ -1,4 +1,4 @@
-/* 基础重置和变量设置 */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 :root {
-    --bg-color: #121212; /* 深色背景 */
+    --bg-color: #121212; 
     --text-color: #f5f5f5;
     --accent-color: #888;
     --hover-overlay: rgba(0, 0, 0, 0.6);
@@ -21,139 +21,51 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--text-color);
+       color: var(--text-color);
     transition: color 0.3s ease;
 }
 
 .container {
-    max-width: 1200px;
+        max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+      padding: 0 20px;
 }
 
-/* 头部导航样式 */
-header {
-    padding: 30px 0;
-    border-bottom: 1px solid #333;
-}
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
 
-.logo span {
-    font-weight: 300;
-    color: var(--accent-color);
-    font-size: 16px;
-    margin-left: 5px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-nav ul li a:hover {
-    color: #fff;
-    text-shadow: 0 0 8px rgba(255,255,255,0.5);
-}
-
-/* 个人简介/Hero 区域 */
-.hero {
-    text-align: center;
-    padding: 60px 20px 40px;
-}
-
-.hero h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
-    font-weight: 400;
-}
-
-.hero p {
-    color: var(--accent-color);
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 16px;
-}
-
-/* 瀑布流画廊核心布局 */
 .gallery-container {
     padding: 20px;
-    max-width: 1400px;
+       max-width: 1400px;
     margin: 0 auto 60px;
 }
 
 .gallery {
-    /* 使用多列布局实现瀑布流 */
+
     column-count: 3;
     column-gap: 20px;
 }
 
 .gallery-item {
     position: relative;
-    margin-bottom: 20px;
-    /* 防止图片在列之间被截断 */
-    break-inside: avoid; 
+     margin-bottom: 20px;
+
+       break-inside: avoid; 
     border-radius: 8px;
-    overflow: hidden;
+          overflow: hidden;
     cursor: pointer;
 }
 
 .gallery-item img {
-    width: 100%;
+       width: 100%;
     display: block;
     border-radius: 8px;
     transition: transform 0.5s ease;
 }
 
-/* 图片悬停遮罩和文字效果 */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--hover-overlay);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
 
-.overlay span {
-    color: #fff;
-    font-size: 18px;
-    letter-spacing: 1px;
-    transform: translateY(20px);
-    transition: transform 0.4s ease;
-}
 
-/* 鼠标悬停时的动画 */
-.gallery-item:hover img {
-    transform: scale(1.05); /* 图片轻微放大 */
-}
 
-.gallery-item:hover .overlay {
-    opacity: 1; /* 显示遮罩 */
-}
-
-.gallery-item:hover .overlay span {
-    transform: translateY(0); /* 文字向上滑入 */
-}
-
-/* 页脚样式 */
 footer {
     text-align: center;
     padding: 30px;
@@ -162,10 +74,10 @@ footer {
     font-size: 14px;
 }
 
-/* 响应式设计：适配平板和手机 */
+/* This Part I got from AI becuase I really don't know how to write adaptive formatting */
 @media (max-width: 992px) {
     .gallery {
-        column-count: 2; /* 平板显示2列 */
+        column-count: 2; 
     }
 }
 
@@ -183,7 +95,7 @@ footer {
 
 @media (max-width: 600px) {
     .gallery {
-        column-count: 1; /* 手机端显示1列 */
+        column-count: 1; /
     }
     
     .hero h2 {
